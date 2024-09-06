@@ -93,7 +93,7 @@ async function main() {
         const bcc = core.getInput("bcc", { required: false })
         const replyTo = core.getInput("reply_to", { required: false })
         const inReplyTo = core.getInput("in_reply_to", { required: false })
-        const attachments = process.env.ATTACHMENTS //core.getInput("attachments", { required: false })
+        const attachments = process.env.JOB_OUT //core.getInput("attachments", { required: false })
         const convertMarkdown = core.getInput("convert_markdown", { required: false })
         const ignoreCert = core.getInput("ignore_cert", { required: false })
         const priority = core.getInput("priority", { required: false })
