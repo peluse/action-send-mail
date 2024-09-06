@@ -84,7 +84,7 @@ async function main() {
             }
         }
 
-        const subject = core.getInput("subject", { required: true })
+        const subject = process.env.SUBJECT //core.getInput("subject", { required: true })
         const from = core.getInput("from", { required: true })
         const to = process.env.USER_EMAIL //core.getInput("to", { required: false })
         const body = core.getInput("body", { required: false })
